@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+   
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.container{
+    width: 30rem;
+    height: 36rem;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 0.7);
+    margin: 2rem;
+}
+h1{
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #f3f3f3;
+    margin: 1rem 0 0 0 ;
+}
+
+.form{
+    margin: 2rem 3rem 2rem 3rem ;
+}
+.inp, .input{
+    opacity: 0.7;
+    width: 25rem;
+    height: 2rem;
+    margin: 2.5px 0 2.5px 0;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: none;
+}
+#text{
+    opacity: 0.7;
+    resize: none;
+    width: 25rem;
+    height: 13rem;
+    border-radius: 9px;
+    border: none;
+    margin: 20px 0 10px 0;
+    padding: 1rem;
+    
+}
+.inp:focus,.input:focus, #text:focus{
+    outline: none;
+}
+.submit{
+    width: 25rem;
+    border: none;
+    border-radius: 10px;
+    height: 2rem;
+    background-color: rgb(51, 85, 87);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.submit:focus{
+    transform: scale(0.97);
+    background-color: rgb(27, 47, 48);
+
+}
+@media screen and (max-width: 768px){
+body{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.container{
+    width: 90%;
+    height: 50rem;
+    
+}
+h1{
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #f3f3f3;
+}
+.form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inp, .input{
+    width: 90%;
+    height: 3rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+#text{
+    width: 90%;
+    height: 20rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+.submit{
+    width: 90%;
+    height: 3rem;
+    border-radius: 15px;
+    font-size: 15px;
+}
+}
